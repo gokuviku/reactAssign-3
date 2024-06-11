@@ -1,6 +1,6 @@
-import  { useState } from 'react';
+import { useState } from 'react';
 
-export default function Task() {
+export default function Event() {
     const [check, setCheck] = useState(false)
     const handleform = (e) => {
         e.preventDefault()
@@ -8,8 +8,8 @@ export default function Task() {
     }
 
     const obj = [
-        { id: 1, name: 'yash', age: 20 },
-        { id: 2, name: 'panchal', age: 18 },
+        { id: 1, name: 'vikas', age: 20 },
+        { id: 2, name: 'soni', age: 18 },
 
     ]
 
@@ -37,8 +37,8 @@ export default function Task() {
                 </form>
                 <br /><br />
             </>
+            <h5>array of object using list & keys.</h5><br />
 
-            <h5>2.Create array & array of object using list & keys.</h5><br />
             <ul>
                 {obj.map(item => (
                     <li key={item.id}>
@@ -51,7 +51,7 @@ export default function Task() {
             </ul>
 
 
-            <h5>3.Write a program to perform conditional rendering </h5>
+            <h5>conditional rendering </h5>
             <>
                 {login ? (
                     <>
@@ -66,11 +66,10 @@ export default function Task() {
                 )}
             </><br /><br />
 
-            <h5>4. Write a program to perform toggle button [yes,Noo] </h5> 
+            <h5> toggle button</h5>
             <>
-                <h5>Toggle Button </h5>
                 <button className='btn_off' onClick={handleToggle}>
-                    {isOn ? 'yess' : 'Noo'}
+                    {isOn ? 'yes' : 'No'}
                 </button>
             </>
         </>

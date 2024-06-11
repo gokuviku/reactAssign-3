@@ -2,6 +2,8 @@ import { useState } from 'react';
 
 export default function Content() {
     const [counter, setCounter] = useState(5);
+
+
     return (
         <>
             <div className="main-one">
@@ -9,6 +11,8 @@ export default function Content() {
                 <button className='increment' onClick={() => setCounter(counter + 5)}>Increment ++</button>
                 <button className='increment1' onClick={() => setCounter(counter - 5)}>Decrement --</button>
             </div>
+
+       
         </>
     );
 }
